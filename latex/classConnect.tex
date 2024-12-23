@@ -1,0 +1,96 @@
+\hypertarget{classConnect}{}\doxysection{Класс Connect}
+\label{classConnect}\index{Connect@{Connect}}
+
+
+Класс для подключения к серверу  
+
+
+
+
+{\ttfamily \#include $<$Connect.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classConnect_a347a54af857f70bc997a34b97397663b}{Connect\+\_\+to\+\_\+server}} (string str1, string str2)
+\begin{DoxyCompactList}\small\item\em Взаимодействие с сервером. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classConnect_a03a346851621f86f28af7347108253aa}\label{classConnect_a03a346851621f86f28af7347108253aa}} 
+void {\bfseries Get\+Login\+Password} ()
+\begin{DoxyCompactList}\small\item\em Получение из файла логина и пароля. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classConnect_a29956467c0ee54bf766b707d1c8fe555}\label{classConnect_a29956467c0ee54bf766b707d1c8fe555}} 
+int {\bfseries ip\+\_\+addr}
+\item 
+\mbox{\Hypertarget{classConnect_a14cb90849c07b97e566e3a47adff37b8}\label{classConnect_a14cb90849c07b97e566e3a47adff37b8}} 
+int {\bfseries port}
+\item 
+\mbox{\Hypertarget{classConnect_a7ad283ab75fe798056caf661f48a619b}\label{classConnect_a7ad283ab75fe798056caf661f48a619b}} 
+string {\bfseries name\+\_\+original\+\_\+file}
+\item 
+\mbox{\Hypertarget{classConnect_aff789255ab3956f6412308e4176af8e9}\label{classConnect_aff789255ab3956f6412308e4176af8e9}} 
+string {\bfseries name\+\_\+result\+\_\+file}
+\item 
+\mbox{\Hypertarget{classConnect_ad2c2918925dc7e61490338f3fd877918}\label{classConnect_ad2c2918925dc7e61490338f3fd877918}} 
+string {\bfseries name\+\_\+auto\+\_\+file}
+\item 
+\mbox{\Hypertarget{classConnect_a63453203bd69745c2b3ae3df753983b5}\label{classConnect_a63453203bd69745c2b3ae3df753983b5}} 
+string {\bfseries username}
+\item 
+\mbox{\Hypertarget{classConnect_a266b0441b122704030e145b1d3e30da5}\label{classConnect_a266b0441b122704030e145b1d3e30da5}} 
+string {\bfseries pswd}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для подключения к серверу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ip\+\_\+addr} & адрес сервера \\
+\hline
+{\em port} & порт сервера \\
+\hline
+{\em name\+\_\+original\+\_\+file} & имя файла для считывания векторов \\
+\hline
+{\em name\+\_\+result\+\_\+file} & имя файла для записи суммы векторов \\
+\hline
+{\em name\+\_\+auto\+\_\+file} & имя файла, в котором храняться логины и пароли клиентов \\
+\hline
+{\em username} & логин клиента \\
+\hline
+{\em pswd} & пароль клиента \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classConnect_a347a54af857f70bc997a34b97397663b}\label{classConnect_a347a54af857f70bc997a34b97397663b}} 
+\index{Connect@{Connect}!Connect\_to\_server@{Connect\_to\_server}}
+\index{Connect\_to\_server@{Connect\_to\_server}!Connect@{Connect}}
+\doxysubsubsection{\texorpdfstring{Connect\_to\_server()}{Connect\_to\_server()}}
+{\footnotesize\ttfamily int Connect\+::\+Connect\+\_\+to\+\_\+server (\begin{DoxyParamCaption}\item[{string}]{str1,  }\item[{string}]{str2 }\end{DoxyParamCaption})}
+
+
+
+Взаимодействие с сервером. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str1} & адрес сервера. \\
+\hline
+{\em str2} & порт сервера. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classerror__proj}{error\+\_\+proj}}} & при возникновении ошибки. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Connect_8h}{Connect.\+h}}\item 
+\mbox{\hyperlink{Connect_8cpp}{Connect.\+cpp}}\end{DoxyCompactItemize}

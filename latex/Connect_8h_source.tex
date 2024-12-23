@@ -1,0 +1,48 @@
+\hypertarget{Connect_8h_source}{}\doxysection{Connect.\+h}
+\mbox{\hyperlink{Connect_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <sys/socket.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <netinet/in.h>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <arpa/inet.h>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <locale>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <codecvt>}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{39 \textcolor{keyword}{class }\mbox{\hyperlink{classConnect}{Connect}}\{}
+\DoxyCodeLine{40     \textcolor{keyword}{public}:}
+\DoxyCodeLine{41         \textcolor{keywordtype}{int} ip\_addr;}
+\DoxyCodeLine{42         \textcolor{keywordtype}{int} port;}
+\DoxyCodeLine{43         \textcolor{keywordtype}{string} name\_original\_file;}
+\DoxyCodeLine{44         \textcolor{keywordtype}{string} name\_result\_file;}
+\DoxyCodeLine{45         \textcolor{keywordtype}{string} name\_auto\_file;}
+\DoxyCodeLine{46         \textcolor{keywordtype}{string} username;}
+\DoxyCodeLine{47         \textcolor{keywordtype}{string} pswd;}
+\DoxyCodeLine{48         \textcolor{keywordtype}{int} \mbox{\hyperlink{classConnect_a347a54af857f70bc997a34b97397663b}{Connect\_to\_server}}(\textcolor{keywordtype}{string} str1, \textcolor{keywordtype}{string} str2);}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} \mbox{\hyperlink{classConnect_a03a346851621f86f28af7347108253aa}{GetLoginPassword}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57 \textcolor{keyword}{class }\mbox{\hyperlink{classerror__proj}{error\_proj}}: \textcolor{keyword}{public} std::invalid\_argument}
+\DoxyCodeLine{58 \{}
+\DoxyCodeLine{59 \textcolor{keyword}{public}:}
+\DoxyCodeLine{60     \textcolor{keyword}{explicit} \mbox{\hyperlink{classerror__proj}{error\_proj}} (\textcolor{keyword}{const} std::string\& what\_arg):}
+\DoxyCodeLine{61         std::invalid\_argument(what\_arg) \{\}}
+\DoxyCodeLine{62     \textcolor{keyword}{explicit} \mbox{\hyperlink{classerror__proj}{error\_proj}} (\textcolor{keyword}{const} \textcolor{keywordtype}{char}* what\_arg):}
+\DoxyCodeLine{63         std::invalid\_argument(what\_arg) \{\}}
+\DoxyCodeLine{64 \};}
+\DoxyCodeLine{65 }
+
+\end{DoxyCode}
